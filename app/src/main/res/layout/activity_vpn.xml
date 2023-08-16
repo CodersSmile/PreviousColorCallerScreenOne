@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/comman_bg"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Theme_Vpn_Activity">
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/quicksand_medium"
+            android:gravity="center"
+            android:text="Start Vpn"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold">
+
+        </TextView>
+    </RelativeLayout>
+    <androidx.core.widget.NestedScrollView
+        app:layout_constraintBottom_toTopOf="@+id/get_start_btn"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/select_country"
+                android:background="@drawable/tital_bg"
+                android:layout_margin="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+
+                <TextView
+                    android:id="@+id/text_country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:paddingLeft="20dp"
+                    android:text=" select country"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/image_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:src="@drawable/flag_aland" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/start_btn"
+                android:textSize="18dp"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/stop_vpn_bg"
+                android:fontFamily="@font/quicksand_bold"
+                android:gravity="center"
+                android:text="START VPN"
+                android:textColor="@color/white">
+
+            </TextView>
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/stop_btn"
+                android:textSize="18dp"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/start_vpn_bg"
+                android:fontFamily="@font/quicksand_medium"
+                android:gravity="center"
+                android:text="STOP VPN"
+                android:textColor="@color/white">
+
+            </TextView>
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/skip_btn"
+                android:fontFamily="@font/quicksand_medium"
+                android:textColor="@color/white"
+                android:text="SKIP"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:background="@drawable/skip_bg"
+                android:layout_width="100dp"
+                android:layout_height="30dp">
+
+            </TextView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <TextView
+        android:elevation="7dp"
+        android:visibility="gone"
+        android:id="@+id/get_start_btn"
+        android:textColor="@color/white"
+        android:background="@drawable/comman_button"
+        android:fontFamily="@font/quicksand_medium"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:text="Get's Start"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/ad_banner"
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="50dp">
+
+    </TextView>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/ad_banner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

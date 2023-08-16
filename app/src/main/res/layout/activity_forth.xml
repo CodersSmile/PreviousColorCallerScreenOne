@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/comman_bg"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Theme_Forth_Activity">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/ad_banner"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_300sdp">
+
+                <LinearLayout
+                    android:id="@+id/native_ads"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.themescreen.flashcolor.stylescreen.shimer.ShimmerFrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <include layout="@layout/layout_ads_native_admob" />
+                    </com.themescreen.flashcolor.stylescreen.shimer.ShimmerFrameLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/start_btn"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/button_design"
+                android:gravity="center"
+                android:text="Go App"
+                android:textColor="@color/black"
+                android:textSize="18dp">
+
+            </TextView>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/ad_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

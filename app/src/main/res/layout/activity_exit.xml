@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/comman_bg">
+     <LinearLayout
+         android:id="@+id/native_ads"
+         app:layout_constraintTop_toTopOf="parent"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <com.themescreen.flashcolor.stylescreen.shimer.ShimmerFrameLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+             <include layout="@layout/layout_ads_native_admob"/>
+         </com.themescreen.flashcolor.stylescreen.shimer.ShimmerFrameLayout>
+     </LinearLayout>
+    <ImageView
+        android:layout_marginTop="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/native_ads"
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/thank_u_img"
+         />
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="THANK YOU"
+        android:textColor="#176A61"
+        android:textSize="@dimen/_22sdp"
+        android:textStyle="bold"
+        android:fontFamily="@font/quicksand_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="for Visit App"
+        android:textColor="#fff"
+        android:textSize="@dimen/_17sdp"
+        android:textStyle="bold"
+        android:fontFamily="@font/quicksand_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview1" />
+   <LinearLayout
+       android:orientation="vertical"
+       android:id="@+id/ad_banner"
+       app:layout_constraintBottom_toBottomOf="parent"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

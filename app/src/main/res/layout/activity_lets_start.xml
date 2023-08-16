@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/comman_bg"
+    tools:context=".custom_dailor.Activity.Theme_LetsStartActivity">
+     <androidx.core.widget.NestedScrollView
+         app:layout_constraintBottom_toTopOf="@+id/ad_banner"
+         app:layout_constraintTop_toTopOf="parent"
+         android:layout_width="match_parent"
+         android:layout_height="0dp">
+         <LinearLayout
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/_320sdp">
+                 <LinearLayout
+                     android:orientation="vertical"
+                     android:id="@+id/native_ads"
+                     android:layout_width="match_parent"
+                     android:layout_height="@dimen/_300sdp">
+                     <com.themescreen.flashcolor.stylescreen.shimer.ShimmerFrameLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content">
+                         <include layout="@layout/layout_ads_native_admob"/>
+                     </com.themescreen.flashcolor.stylescreen.shimer.ShimmerFrameLayout>
+                 </LinearLayout>
+             </RelativeLayout>
+
+             <TextView
+                 android:fontFamily="@font/quicksand_medium"
+                 android:textSize="18dp"
+                 android:textColor="@color/black"
+                 android:background="@drawable/button_design"
+                 android:gravity="center"
+                 android:text="Let's Start"
+                 android:layout_gravity="center_horizontal"
+                 android:id="@+id/lets_start_btn"
+                 android:layout_width="@dimen/_230sdp"
+                 android:layout_height="55dp"
+                 android:src="@drawable/lets_start_btn"
+                 />
+             <RelativeLayout
+                 android:layout_marginTop="10dp"
+                 android:id="@+id/relativeLayout"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="40dp"
+                 android:layout_marginEnd="40dp"
+                 android:layout_marginBottom="30dp"
+                 app:layout_constraintBottom_toBottomOf="parent"
+                 app:layout_constraintEnd_toEndOf="parent"
+                 app:layout_constraintStart_toStartOf="parent">
+
+                 <ImageView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:adjustViewBounds="true"
+                     android:src="@drawable/lets_start_buttom_btn" />
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="60dp">
+
+                     <ImageView
+                         android:id="@+id/share_btn"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1" />
+
+                     <ImageView
+                         android:id="@+id/privacy_btn"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1" />
+
+                     <ImageView
+                         android:id="@+id/rate_btn"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1" />
+
+                 </LinearLayout>
+
+             </RelativeLayout>
+         </LinearLayout>
+     </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+<LinearLayout
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:orientation="vertical"
+    android:id="@+id/ad_banner"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ad_banner"
+        android:gravity="top|center_vertical|center_horizontal|center"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/actionbar_two"
+            layout="@layout/row_actionbar_three" />
+
+        <RelativeLayout
+            android:id="@+id/relative_videoview"
+            android:layout_width="643px"
+            android:layout_height="1000px">
+
+            <VideoView
+                android:id="@+id/video_theam_preview"
+                android:layout_width="643px"
+                android:layout_height="1000px"
+                android:src="@drawable/video_theme_img_bg" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/img_user_pic_border"
+                    android:layout_width="170px"
+                    android:layout_height="170px"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/avtar_img_border" />
+
+                <ImageView
+                    android:id="@+id/img_user"
+                    android:layout_width="170px"
+                    android:layout_height="170px"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/user_final_img" />
+
+                <ImageView
+                    android:id="@+id/avtar_text"
+                    android:layout_width="314px"
+                    android:layout_height="88px"
+                    android:layout_below="@+id/img_user"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:src="@drawable/avtar_text" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/_15sdp">
+
+                <ImageView
+                    android:id="@+id/img_recive_demo"
+                    android:layout_width="160px"
+                    android:layout_height="160px"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:src="@drawable/noti_receive_btn_unpress" />
+
+                <ImageView
+                    android:id="@+id/img_rej_demo"
+                    android:layout_width="160px"
+                    android:layout_height="160px"
+                    android:layout_marginLeft="@dimen/_45sdp"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:layout_toRightOf="@+id/img_recive_demo"
+                    android:src="@drawable/noti_decline_btn_unpress" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/reject_call_recycle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/img_done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/set_btn_bg"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:onClick="done_click"
+                    android:paddingHorizontal="@dimen/_30sdp"
+                    android:paddingTop="@dimen/_6sdp"
+                    android:paddingBottom="@dimen/_7sdp"
+                    android:text="Set"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/ad_banner"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

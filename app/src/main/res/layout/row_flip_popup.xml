@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/liner_cropper_flip" android:background="@drawable/flip_full_box_cropper" android:layout_width="464px" android:layout_height="274px" android:weightSum="2">
+        <ImageView android:id="@+id/img_flip_horizontally" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <ImageView android:id="@+id/img_flip_vertically" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

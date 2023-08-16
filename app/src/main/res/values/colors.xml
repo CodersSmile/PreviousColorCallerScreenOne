@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="black">#000</color>
+    <color name="blacktextcolor">#141414</color>
+    <color name="bluetextcolor">#A1A1A1</color>
+    <color name="colorAccent">#d81b60</color>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="gray">#808080</color>
+    <color name="grayone">#b3b3b3</color>
+    <color name="halftrans">#7c000000</color>
+    <color name="white">#ffffff</color>
+    <color name="bg_main">#068abf</color>
+    <color name="preview_btn_bg">#FDE4E3</color>
+
+    <color name="gnt_test_background_color">#00F4F4F4</color>
+    <color name="gnt_test_background_color_2">#00A3A3A3</color>
+    <color name="gnt_black">#000000</color>
+    <color name="gnt_white">#FFFFFF</color>
+    <color name="gnt_red">#FF0000</color>
+    <color name="gnt_green">#00FF00</color>
+    <color name="gnt_blue">#005AEE</color>
+    <color name="gnt_ad_green">#FFC107</color>
+    <color name="gnt_gray">#808080</color>
+    <color name="gnt_outline">#E0E0E0</color>
+
+    <color name="gntBlack">#000000</color>
+    <color name="colorEditBackground">#1A4E4E4E</color>
+    <color name="lightTransparent">#16000000</color>
+    <color name="colorAds">#068abf</color>
+
+    <color name="adsNativeBg">#ffffff</color>
+    <color name="adsTagBg">#FFBB86FC</color>
+</resources>

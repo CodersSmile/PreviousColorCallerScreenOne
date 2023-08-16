@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:gravity="top|center_vertical|center_horizontal|center"
+    android:orientation="vertical">
+    <androidx.core.widget.NestedScrollView
+        android:layout_above="@+id/ad_banner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include
+                android:id="@+id/actionbar"
+                layout="@layout/raw_actionbar" />
+            <LinearLayout
+                android:id="@+id/native_ads"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.themescreen.flashcolor.stylescreen.shimer.ShimmerFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <include layout="@layout/layout_ads_native_admob"/>
+                </com.themescreen.flashcolor.stylescreen.shimer.ShimmerFrameLayout>
+            </LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:elevation="0dp"
+                app:cardCornerRadius="@dimen/_25sdp">
+
+                <RelativeLayout
+                    android:id="@+id/relative_start_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="138px"
+                    android:onClick="service_on_off">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="Start Service"
+                        android:textColor="@color/blacktextcolor"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/img_serview_on_off"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:src="@drawable/on_btn" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:fontFamily="@font/quicksand_bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/button_design"
+                    android:gravity="center"
+                    android:text="Caller Theme"
+                    android:id="@+id/img_caller_theme"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="@dimen/_7sdp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:onClick="caller_screen_click"
+                     />
+
+                <TextView
+                    android:fontFamily="@font/quicksand_bold"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:background="@drawable/button_design"
+                    android:gravity="center"
+                    android:text="Preview"
+                    android:id="@+id/img_preview"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:onClick="caller_preview_click"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:fontFamily="@font/quicksand_bold"
+                    android:background="@drawable/button_design"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:text="Dialer Pad"
+                    android:id="@+id/dailer_pad"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="@dimen/_7sdp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true" />
+
+                <TextView
+                    android:fontFamily="@font/quicksand_bold"
+                    android:textColor="@color/black"
+                    android:background="@drawable/button_design"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:text="Wallpaper"
+                    android:id="@+id/wall_paper"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:onClick="caller_preview_click"
+                     />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@+id/ad_banner"
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+</LinearLayout>
+</RelativeLayout>

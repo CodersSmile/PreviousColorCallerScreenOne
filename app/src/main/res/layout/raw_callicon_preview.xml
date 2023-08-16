@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:gravity="center">
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="@dimen/_25sdp"
+        android:layout_width="wrap_content"
+        android:background="@color/white"
+        app:cardElevation="0dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/liner_main"
+            android:layout_width="910px"
+            android:layout_height="170px"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/reccive_call"
+                    android:layout_width="160px"
+                    android:layout_height="160px"
+                    android:src="@drawable/accept_button_two" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/reject_call"
+                    android:layout_width="160px"
+                    android:layout_height="160px"
+                    android:src="@drawable/decline_button_two" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

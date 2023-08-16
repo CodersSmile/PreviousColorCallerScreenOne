@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Call Screen Themes Color Phone</string>
+
+
+    <string name="ad_attribution">Ad</string>
+
+    <string name="status_call_connexting">Dialing..</string>
+    <string name="status_call_disconnected">Call ended</string>
+    <string name="status_call_incoming">Is Calling</string>
+
+    <string name="google_api_key">AIzaSyD7_f9ASxAlsI1EO-E35Oxz6bpSxFaYces</string>
+    <string name="google_app_id">1:608157547161:android:a940121eebb60323bdd608</string>
+    <string name="project_id">my-photo-lyrical-status-video</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="storage_total">Total Space</string>
+    <string name="storage_free">Free Space</string>
+    <string name="ram_total">Total Ram</string>
+    <string name="ram_used">Used RAM</string>
+    <string name="ram_free">Free RAM</string>
+    <string name="batt_remain">Battery Level</string>
+    <string name="batt_status">Battery Status</string>
+    <string name="batt_health">Battery Health</string>
+    <string name="batt_temp">Battery Temp.</string>
+    <string name="batt_technology">Battery Tech</string>
+    <string name="batt_volte">Battery Voltage</string>
+
+</resources>

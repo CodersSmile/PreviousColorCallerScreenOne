@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layADs"
+        android:gravity="top|center_vertical|center_horizontal|center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relative_action_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:src="@drawable/back_btn" />
+
+            <TextView
+                android:id="@+id/action_bar_header"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/quicksand_bold"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Contect List"
+                android:textColor="@color/blacktextcolor"
+                android:textSize="@dimen/_15sdp" />
+
+            <ImageView
+                android:id="@+id/img_action_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:src="@drawable/ation_bar_done" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/edit_search"
+            android:layout_width="901px"
+            android:layout_height="101px"
+            android:layout_below="@+id/relative_action_bar"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/searc_box_bg"
+            android:drawableRight="@drawable/search_press"
+            android:hint="Search Your Contacts Here"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:textColorHint="#c2c2c2"
+            android:textCursorDrawable="@drawable/curser"
+            android:textSize="@dimen/_10sdp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/contacts_list_recycleview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:shimmer_repeat_mode="restart"
+            app:shimmer_shape="radial">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/swimmer_contacts" />
+
+                <include layout="@layout/swimmer_contacts" />
+
+                <include layout="@layout/swimmer_contacts" />
+
+                <include layout="@layout/swimmer_contacts" />
+
+                <include layout="@layout/swimmer_contacts" />
+
+                <include layout="@layout/swimmer_contacts" />
+
+                <include layout="@layout/swimmer_contacts" />
+
+                <include layout="@layout/swimmer_contacts" />
+            </LinearLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layADs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:orientation="vertical" />
+
+    <FrameLayout
+        android:id="@+id/ad_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relatvive_main"
+        android:layout_width="983px"
+        android:layout_height="158px"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/contact_title_bg"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/text_first_name"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_centerVertical="true"
+            android:background="@drawable/contact_bg_new"
+            android:fontFamily="@font/quicksand_medium"
+            android:gravity="center"
+            android:text="A"
+            android:textColor="@color/bluetextcolor"
+            android:textSize="@dimen/_15sdp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/contect_image"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_centerVertical="true"
+            android:src="@drawable/contact_bg" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_toStartOf="@+id/img_select_contect"
+            android:layout_toEndOf="@+id/text_first_name"
+            android:gravity="left|center_vertical|center_horizontal|center|start">
+
+            <TextView
+                android:id="@+id/contect_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/quicksand_medium"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:text="Name"
+                android:textColor="#212121"
+                android:textSize="@dimen/_13sdp" />
+
+            <TextView
+                android:id="@+id/contect_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contect_name"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:fontFamily="@font/quicksand_medium"
+                android:includeFontPadding="false"
+                android:text="Number"
+                android:textColor="#767676"
+                android:textSize="@dimen/_9sdp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_select_contect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/unselect_contact" />
+    </RelativeLayout>
+</RelativeLayout>

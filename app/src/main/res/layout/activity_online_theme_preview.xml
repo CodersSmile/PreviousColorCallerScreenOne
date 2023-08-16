@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <VideoView
+        android:id="@+id/raw_online_theam_videoview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true" />
+
+    <include
+        android:id="@+id/action_bar"
+        layout="@layout/row_actionbat_two" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/action_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/img_user"
+            android:layout_width="579px"
+            android:layout_height="505px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/full_avtar" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relative_settheam"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_30sdp">
+
+        <ImageView
+            android:id="@+id/img_recive"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginRight="@dimen/_55sdp"
+            android:src="@drawable/noti_receive_btn_unpress" />
+
+        <ImageView
+            android:id="@+id/img_reject"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_marginLeft="@dimen/_55sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_toRightOf="@+id/img_recive"
+            android:src="@drawable/noti_decline_btn_unpress" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_settheam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_30sdp">
+
+        <TextView
+            android:id="@+id/btn_set_theam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/set_btn_bg"
+            android:fontFamily="@font/quicksand_bold"
+            android:paddingHorizontal="@dimen/_30sdp"
+            android:paddingTop="@dimen/_6sdp"
+            android:paddingBottom="@dimen/_7sdp"
+            android:text="Set Theme"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+        <ImageView
+            android:id="@+id/img_contect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_toRightOf="@+id/btn_set_theam"
+            android:onClick="contect_click"
+            android:src="@drawable/contact_event"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</RelativeLayout>
